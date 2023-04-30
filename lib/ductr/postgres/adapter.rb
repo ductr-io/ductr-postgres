@@ -22,11 +22,8 @@ module Ductr
     # @see https://sequel.jeremyevans.net/rdoc/files/doc/opening_databases_rdoc.html#label-postgres
     #   PostgreSQL specific options
     #
-    class Adapter < Ductr::Adapter
+    class Adapter < Ductr::SequelBase::Adapter
       Ductr.adapter_registry.add(self, as: :postgres)
-
-      # @return [Sequel::Database, nil] The database connection instance
-      attr_reader :db
 
       #
       # Opens the database connection with the adapter's configuration.

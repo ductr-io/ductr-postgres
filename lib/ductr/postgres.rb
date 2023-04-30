@@ -14,8 +14,7 @@ module Ductr
   # To get details about the database connection handling, checkout the {Ductr::Postgres::Adapter} class.
   #
   # ### Sources
-  # - {Ductr::Postgres::BasicSource} Yields rows one by one.
-  # - {Ductr::Postgres::PaginatedSource} Allows to select a big number of rows by relying on pagination.
+  # - {Ductr::Postgres::BasicSource} Yields rows one by one using postgres streaming feature.
   #
   # ### Lookups
   # - {Ductr::Postgres::BasicLookup} Executes one query per row and merge the looked up row with the current row.
