@@ -42,9 +42,9 @@ See [the Sequel PostgreSQL specific options list](https://sequel.jeremyevans.net
 The configured adapter can now be used in Ductr jobs e.g.:
 
 ```ruby
-source :some_postgres_database, :streamed
-def select_some_stuff(db, offset, limit)
-  db[:items].offset(offset).limit(limit)
+source :some_postgres_database, :basic
+def select_some_stuff(db)
+  db[:items].where(name: %w[hello world])
 end
 ```
 
