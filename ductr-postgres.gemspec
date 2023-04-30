@@ -32,17 +32,17 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "ductr", "~> 0.1"
-  spec.add_dependency "pg", "~> 1.4"
-  spec.add_dependency "sequel", "~> 5.66"
-  spec.add_dependency "sequel_pg", "~> 1.8"
+  spec.add_dependency "ductr", "~> 0.2"
+  spec.add_dependency "pg", "~> 1.5"
+  spec.add_dependency "sequel", "~> 5.67"
+  spec.add_dependency "sequel_pg", "~> 1.17"
 
   spec.add_development_dependency "rake", "~> 13.0"
-  spec.add_development_dependency "redcarpet", "~> 3.5"
-  spec.add_development_dependency "rspec", "~> 3.11"
-  spec.add_development_dependency "rubocop", "~> 1.29"
-  spec.add_development_dependency "rubocop-rspec", "~> 2.11"
-  spec.add_development_dependency "simplecov", "~> 0.21"
-  spec.add_development_dependency "sord", "~> 4.0"
+  spec.add_development_dependency "redcarpet", "~> 3.6"
+  spec.add_development_dependency "rspec", "~> 3.12"
+  spec.add_development_dependency "rubocop", "~> 1.50"
+  spec.add_development_dependency "rubocop-rspec", "~> 2.20"
+  spec.add_development_dependency "simplecov", "~> 0.22"
+  spec.add_development_dependency "sord", "~> 5.0"
   spec.add_development_dependency "yard", "~> 0.9"
 end
